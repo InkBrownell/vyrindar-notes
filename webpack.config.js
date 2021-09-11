@@ -9,7 +9,8 @@ module.exports = {
     path: __dirname + '/dist',
     filename: "app.bundle.js"
   },
-  mode: "production",
+  mode: "development",
+  devtool: "eval-source-map",
   module: {
     rules: [
       {

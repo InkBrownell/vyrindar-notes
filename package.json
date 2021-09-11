@@ -18,15 +18,15 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.15.4",
-        "bootstrap": "^5.1.1",
+        "bootstrap": "^4.6.0",
         "jquery": "^3.6.0",
-        "jquery-sticky-table-header": "^1.1.1"
+        "jquery-sticky-table-header": "^1.1.1",
+        "popper.js": "^1.16.1"
     },
     "devDependencies": {
         "@babel/cli": "^7.15.4",
         "@babel/core": "^7.15.5",
         "@babel/preset-env": "^7.15.6",
-        "@popperjs/core": "^2.10.1",
         "babel-loader": "^8.2.2",
         "css-loader": "^6.2.0",
         "gh-pages": "^3.2.3",

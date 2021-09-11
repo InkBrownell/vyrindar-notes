@@ -15,7 +15,14 @@
          :sitemap-title "Pages"
          :html-link-home "index.html"
          :html-head-include-default-style nil
-         :html-head "<script type=\"text/javascript\" src=\"app.bundle.js\"></script>")
+         :html-head "<script type=\"text/javascript\" src=\"app.bundle.js\"></script>"
+         :html-postamble t
+         :html-postamble-format (("en"
+                                 "<p class=\"author\">Author: %a (%e)</p>
+<p class=\"date\">Date: %d</p>
+<p class=\"creator\">%c</p>
+<p class=\"validation\">%v</p>
+<p><a id=\"source\" href=\"https://github.com/InkBrownell/vyrindar-notes\">Source</a></p>")))
 
         ("vyrindar-static"
          :base-directory "./src/"

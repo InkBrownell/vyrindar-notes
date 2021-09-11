@@ -13,7 +13,7 @@ function collapse_toc_elements_on_click (nav_li_a){
       states.  The active attribute is documented in bootstrap.
       https://getbootstrap.com/docs/4.0/components/navbar/#nav
     */
-    $(nav_li_el).parent().toggleClass("active");
+    $(nav_li_a).parent().toggleClass("active");
 }
 
 $( document ).ready(function() {
@@ -61,7 +61,7 @@ $( document ).ready(function() {
     $('#text-table-of-contents ul').first().addClass('nav');
                                         // ScrollSpy also requires that we use
                                         // a Bootstrap nav component.
-    $('body').scrollspy({target: '#text-table-of-contents'});
+    const body = $('body').scrollspy({target: '#text-table-of-contents'});
 
     // DON'T add sticky table headers (Fix issue #69?)
     // $('table').stickyTableHeaders();
@@ -110,3 +110,27 @@ window.SphinxRtdTheme = (function (jquery) {
         StickyNav : stickyNav
     };
 }($));
+
+function basename(str, sep) {
+    return str.substr(str.lastIndexOf(sep) + 1);
+}
+
+function strip_extension(str) {
+    return str.substr(0,str.lastIndexOf('.'));
+}
+
+$( document ).ready(() => {
+    $('#source').click((e) => {
+        const file_basename = basename(window.location);
+        if (file_basename === 'Pages.html') {
+            return;
+        }
+
+        e.preventDefault();
+        const git_filename = file_basename === ''
+              ? 'index.org'
+              : `${strip_extension(file_basename)}.org`
+
+        window.location = `https://github.com/InkBrownell/vyrindar-notes/blob/master/src/${git_filename}`
+    });
+});
