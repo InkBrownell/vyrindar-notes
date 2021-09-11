@@ -42,16 +42,16 @@ $( document ).ready(function() {
 
     // Shift nav in mobile when clicking the menu.
     $(document).on('click', "[data-toggle='wy-nav-top']", function() {
-      $("[data-toggle='wy-nav-shift']").toggleClass("shift");
-      $("[data-toggle='rst-versions']").toggleClass("shift");
+        $("[data-toggle='wy-nav-shift']").toggleClass("shift");
+        $("[data-toggle='rst-versions']").toggleClass("shift");
     });
     // Close menu when you click a link.
     $(document).on('click', ".wy-menu-vertical .current ul li a", function() {
-      $("[data-toggle='wy-nav-shift']").removeClass("shift");
-      $("[data-toggle='rst-versions']").toggleClass("shift");
+        $("[data-toggle='wy-nav-shift']").removeClass("shift");
+        $("[data-toggle='rst-versions']").toggleClass("shift");
     });
     $(document).on('click', "[data-toggle='rst-current-version']", function() {
-      $("[data-toggle='rst-versions']").toggleClass("shift-up");
+        $("[data-toggle='rst-versions']").toggleClass("shift-up");
     });
     // Make tables responsive
     $("table.docutils:not(.field-list)").wrap("<div class='wy-table-responsive'></div>");
@@ -59,8 +59,8 @@ $( document ).ready(function() {
 
 $( document ).ready(function() {
     $('#text-table-of-contents ul').first().addClass('nav');
-                                        // ScrollSpy also requires that we use
-                                        // a Bootstrap nav component.
+    // ScrollSpy also requires that we use
+    // a Bootstrap nav component.
     const body = $('body').scrollspy({target: '#text-table-of-contents'});
 
     // DON'T add sticky table headers (Fix issue #69?)
@@ -111,26 +111,39 @@ window.SphinxRtdTheme = (function (jquery) {
     };
 }($));
 
-function basename(str, sep) {
-    return str.substr(str.lastIndexOf(sep) + 1);
+function basename(str) {
+    return str.substr(str.lastIndexOf('/') + 1);
 }
 
 function strip_extension(str) {
     return str.substr(0,str.lastIndexOf('.'));
 }
 
-$( document ).ready(() => {
-    $('#source').click((e) => {
-        const file_basename = basename(window.location);
-        if (file_basename === 'Pages.html') {
-            return;
-        }
+$( document ).ready(function() {
 
-        e.preventDefault();
-        const git_filename = file_basename === ''
-              ? 'index.org'
-              : `${strip_extension(file_basename)}.org`
+    const file_basename = basename(window.location.pathname);
+    if (file_basename === 'Pages.html') {
+        $( '#source' ).prop('href', 'https://github.com/InkBrownell/vyrindar-notes')
+        return;
+    }
 
-        window.location = `https://github.com/InkBrownell/vyrindar-notes/blob/master/src/${git_filename}`
-    });
+    const git_filename = file_basename === ''
+          ? 'index.org'
+          : `${strip_extension(file_basename)}.org`
+
+    $( '#source' ).prop('href', `https://github.com/InkBrownell/vyrindar-notes/blob/master/src/${git_filename}`)
 });
+
+$( document ).ready(function() {
+    const file_basename = basename(window.location.pathname);
+    if (file_basename === 'Pages.html') {
+        return;
+    }
+
+    const git_filename = file_basename === ''
+          ? 'index.org'
+          :`${strip_extension(file_basename)}.org`
+
+    $( '#edit' ).prop('href', `https://github.com/InkBrownell/vyrindar-notes/edit/master/src/${git_filename}`)
+    $( '#edit' ).prop('hidden', false)
+})
