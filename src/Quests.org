@@ -118,12 +118,27 @@ cheat her out of her share of the will.
 **** YES [[file:Juniper_Dawnshine.org][Juniper]]
 
 ** Murder at Mystral Manor
-The party deduced that Atlas killed the porter, but was it truly Atlas? A shapeshifter seems to have taken his place.
+The party deduced that [[file:Atlas.org][Atlas]] killed the porter, but was it truly [[file:Atlas.org][Atlas]]? A shapeshifter seems to have taken his place.
 
 *** DONE Discover murder
 *** DONE Uncover perpetrator
 *** TODO Figure out who he is and why he did it
 *** TODO Report the situation to the cops?
+
+*** Characters aware
+**** YES [[file:Foads_Koeffer.org][Foads]]
+**** YES [[file:Noelle_Mystral.org][Noelle]]
+**** YES [[file:Philonis_Abernathie.org][Philonis]]
+**** YES [[file:Ezra_Dwineplith_Dirthtlithar.org][Ezra]]
+**** YES [[file:Juniper_Dawnshine.org][Juniper]]
+
+** Foads' Secret Plans
+Foads had several urgent talks with Elody for unknown reasons while on [[file:Argen_Island.org][Argen Island]]. Maybe those were important?
+
+*** DONE Catch Foads sneaking out at night
+*** DONE Knock that bitch out
+*** DONE Convince Foads to wait until morning
+*** TODO Talk to him about that sometime
 
 *** Characters aware
 **** YES [[file:Foads_Koeffer.org][Foads]]

@@ -1,1 +1,8 @@
 #+TITLE: Lithador
+
+#+CAPTION: A map of Lithador
+#+ATTR_ORG: :width 800
+[[./Lithador_map.png]]
+
+* The World
+Lithador is the world of the Vyrindar campaign.
