@@ -1,0 +1,24 @@
+#+TITLE: Vyrindar DND Campaign Notes
+
+This is a collection of notes about the Vyrindar DND campaign.
+
+* Installation
+Run the following:
+
+#+BEGIN_SRC shell
+git clone https://github.com/InkBrownell/vyrindar-notes
+cd vyrindar-notes
+npm install
+#+END_SRC
+
+This project also depends on Emacs with the ~ox-publish~ package.
+
+* Building
+This project is essentially a static site generator which uses Org files as a backend.
+Yes, it's jank. Yes, it requires Emacs in the build process. The point is that it works.
+
+#+BEGIN_SRC shell
+npm run build
+#+END_SRC
+
+This will place the static files in the ~dist/~ directory.

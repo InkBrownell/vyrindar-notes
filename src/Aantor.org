@@ -1,0 +1,5 @@
+#+TITLE: Aantor
+
+* Description
+Aantor is a minor city in the south of [[file:Lithador.org][Lithador]], located in the [[file:Feywoods.org][Feywoods]] on the border of the [[file:Deepmist_Swamp.org][Deepmist Swamp]].
+Its primarily orcish population makes a living off of the swamp, as well as passing traders and travellers.

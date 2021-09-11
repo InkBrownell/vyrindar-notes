@@ -1,0 +1,10 @@
+#+TITLE: Home
+
+* Welcome!
+This site is a collection of notes concerning the Vyrindar Dungeons and Dragons campaign.
+
+* [[file:Pages.org][Pages]]
+A list of articles on the site.
+
+* Source
+** TODO Placeholder

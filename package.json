@@ -1,0 +1,34 @@
+{
+    "name": "vyrindar-dnd-notes",
+    "description": "A collection of notes about the Vyrindar DND campaign",
+    "version": "1.0.0",
+    "author": "Ink Brownell <inkbrownell@gmail.com>",
+    "license": "MIT",
+    "private": true,
+    "browser": "./dist/index.js",
+    "scripts": {
+        "clean": "rm -rf dist/",
+        "build-org": "emacs --batch --load publish-cfg.el --exec '(org-publish \"vyrindar\" t)'",
+        "build-js": "webpack",
+        "prebuild": "npm run clean",
+        "build": "npm run build-js && npm run build-org"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.4",
+        "bootstrap": "^5.1.1",
+        "jquery": "^3.6.0",
+        "jquery-sticky-table-header": "^1.1.1"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.15.4",
+        "@babel/core": "^7.15.5",
+        "@babel/preset-env": "^7.15.6",
+        "@popperjs/core": "^2.10.1",
+        "babel-loader": "^8.2.2",
+        "css-loader": "^6.2.0",
+        "style-loader": "^3.2.1",
+        "uglifyjs-webpack-plugin": "^2.2.0",
+        "webpack": "^5.52.1",
+        "webpack-cli": "^4.8.0"
+    }
+}
