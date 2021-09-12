@@ -22,3 +22,11 @@ npm run build
 #+END_SRC
 
 This will place the static files in the ~dist/~ directory.
+
+* Publishing
+The project is set up so you can update Github Pages with an NPM command. This will 
+build and then publish the project.
+
+#+BEGIN_SRC shell
+npm run publish
+#+END_SRC
