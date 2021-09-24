@@ -14,7 +14,8 @@
         "prebuild": "npm run clean",
         "build": "npm run build-js && npm run build-org",
         "predeploy": "npm run build",
-        "deploy": "gh-pages --dist dist/"
+        "deploy": "gh-pages --dist dist/",
+        "prepare": "husky install"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.15.4",
@@ -30,6 +31,7 @@
         "babel-loader": "^8.2.2",
         "css-loader": "^6.2.0",
         "gh-pages": "^3.2.3",
+        "husky": "^7.0.2",
         "style-loader": "^3.2.1",
         "uglifyjs-webpack-plugin": "^2.2.0",
         "webpack": "^5.52.1",
