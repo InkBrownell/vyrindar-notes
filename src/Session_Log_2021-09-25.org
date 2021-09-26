@@ -13,11 +13,12 @@
 ** Philonis gets the idea that it's the fountain outside
 *** Juniper swims into the grate and checks out what's down there
 *** There's some sort of underground tunnels down there
-*** There's a mirror with a guardian of the Mystral family in it
+*** There's a mirror with a guardian of the Mystral family in it and a cold staff
 *** No sign of Atlas
 ** Noelle tries looking in the collapsed room
 *** Hears Atlas faintly
 *** He's chained up in a hole which is rapidly felling with water
+*** There's blood everywhere
 *** Noelle got him out, he's alive
 ** Azen uses magic to cut his binds and makes a break for it
 *** He escapes into one of the halls
@@ -25,6 +26,7 @@
 *** Azen is slippery, Foads loses track of him
 ** Philonis realizes something is amiss and runs off to grab their equipment
 *** They go upstairs and find Foads
+**** There's a weird blur that goes through a door towards Foads
 *** They search the upstairs
 *** As the duo are searching, Azen bursts through a door in front of them
 *** Azen is become pincushion
